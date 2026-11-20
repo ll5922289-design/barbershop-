@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BarberShop «Кызыл» — мужские стрижки в центре города</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #111; color: #fff; line-height: 1.6; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+  header { padding: 20px 0; background: rgba(17,17,17,0.95); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #333; }
+  header .container { display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-size: 24px; font-weight: 800; color: #D4A853; letter-spacing: 2px; }
+  .phone { color: #D4A853; text-decoration: none; font-weight: 600; }
+
+  .hero { padding: 100px 0; text-align: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1200') center/cover; }
+  .hero h1 { font-size: 52px; font-weight: 800; margin-bottom: 15px; }
+  .hero h1 span { color: #D4A853; }
+  .hero p { font-size: 20px; color: #ccc; margin-bottom: 30px; }
+  .btn { display: inline-block; background: #D4A853; color: #111; padding: 16px 40px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 18px; transition: 0.3s; }
+  .btn:hover { background: #e8bd63; transform: translateY(-2px); }
+
+  .services { padding: 70px 0; }
+  .services h2 { text-align: center; font-size: 40px; margin-bottom: 10px; }
+  .services .sub { text-align: center; color: #999; margin-bottom: 40px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .card { background: #1a1a1a; padding: 30px; border-radius: 12px; border-left: 4px solid #D4A853; transition: 0.3s; }
+  .card:hover { transform: translateY(-5px); background: #222; }
+  .card h3 { font-size: 22px; margin-bottom: 8px; }
+  .card .price { color: #D4A853; font-size: 26px; font-weight: 800; margin-bottom: 10px; }
+  .card p { color: #999; font-size: 15px; }
+
+  .masters { padding: 70px 0; background: #0a0a0a; }
+  .masters h2 { text-align: center; font-size: 40px; margin-bottom: 40px; }
+  .masters .grid { grid-template-columns: repeat(3, 1fr); }
+  .master { text-align: center; }
+  .master .photo { width: 150px; height: 150px; border-radius: 50%; margin: 0 auto 15px; background: #333; display: flex; align-items: center; justify-content: center; font-size: 60px; border: 3px solid #D4A853; }
+  .master h3 { font-size: 20px; margin-bottom: 5px; }
+  .master p { color: #999; font-size: 14px; }
+
+  .cta { padding: 80px 0; text-align: center; background: #1a1a1a; }
+  .cta h2 { font-size: 40px; margin-bottom: 15px; }
+  .cta p { color: #999; font-size: 18px; margin-bottom: 30px; }
+
+  footer { padding: 30px 0; text-align: center; color: #666; font-size: 14px; border-top: 1px solid #222; }
+
+  @media (max-width: 768px) {
+    .hero h1 { font-size: 32px; }
+    .grid, .masters .grid { grid-template-columns: 1fr; }
+    .services h2, .masters h2, .cta h2 { font-size: 28px; }
+    .phone { font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">BARBER КЫЗЫЛ</div>
+    <a href="tel:+79990000000" class="phone">+7 (999) 000-00-00</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Мужские стрижки <span>в центре Кызыла</span></h1>
+    <p>Стиль, борода и качество — по записи за 30 секунд</p>
+    <a href="https://t.me/username" class="btn">Записаться онлайн</a>
+  </div>
+</section>
+
+<section class="services">
+  <div class="container">
+    <h2>Услуги и цены</h2>
+    <p class="sub">Честные цены, стерильные инструменты, мастера с опытом</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Мужская стрижка</h3>
+        <div class="price">800 ₽</div>
+        <p>Машинка + ножницы, укладка, борода по желанию</p>
+      </div>
+      <div class="card">
+        <h3>Стрижка бороды</h3>
+        <div class="price">500 ₽</div>
+        <p>Оформление, контур, тёплое полотенце</p>
+      </div>
+      <div class="card">
+        <h3>Комплекс «Всё включено»</h3>
+        <div class="price">1200 ₽</div>
+        <p>Стрижка + борода + укладка + массаж головы</p>
+      </div>
+      <div class="card">
+        <h3>Детская стрижка</h3>
+        <div class="price">600 ₽</div>
+        <p>До 12 лет, спокойная атмосфера</p>
+      </div>
+      <div class="card">
+        <h3>Бритьё опасной бритвой</h3>
+        <div class="price">700 ₽</div>
+        <p>Классическое бритьё, горячий компресс</p>
+      </div>
+      <div class="card">
+        <h3>Камуфляж седины</h3>
+        <div class="price">900 ₽</div>
+        <p>Естественное тонирование без эффекта краски</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="masters">
+  <div class="container">
+    <h2>Наши мастера</h2>
+    <div class="grid">
+      <div class="master">
+        <div class="photo">👨‍🦱</div>
+        <h3>Айдын</h3>
+        <p>Барбер, опыт 7 лет</p>
+      </div>
+      <div class="master">
+        <div class="photo">🧑‍🦰</div>
+        <h3>Менги</h3>
+        <p>Барбер, опыт 4 года</p>
+      </div>
+      <div class="master">
+        <div class="photo">👨‍🦲</div>
+        <h3>Сергей</h3>
+        <p>Барбер-стилист, опыт 10 лет</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2>Запишитесь сегодня</h2>
+    <p>Свободные окна есть на этой неделе. Запись через Telegram — за 30 секунд.</p>
+    <a href="https://t.me/username" class="btn">Записаться в Telegram</a>
+    <p style="margin-top: 20px; color:#666; font-size:14px;">Кызыл, ул. Кочетова, 15 · Ежедневно 10:00–21:00</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    © 2026 BarberShop «Кызыл» · Сделано в Тыва Digital
+  </div>
+</footer>
+
+</body>
+</html>
